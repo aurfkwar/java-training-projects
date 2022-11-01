@@ -1,0 +1,20 @@
+# Please see the documentation for all configuration options:
+# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: "maven"    # Doesn't run maven, but targets pom.xml
+    directory: "/"
+    open-pull-requests-limit: 5   # Default is a limit of 5
+    schedule:
+      interval: "daily"           # Monday-Friday
+      time: "08:00"               # 8 AM
+      timezone: "America/Chicago" # US Central, follows daylight changes
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    open-pull-requests-limit: 5   # Default is a limit of 5
+    schedule:
+      interval: "daily"           # Monday-Friday
+      time: "08:00"               # 8 AM
+      timezone: "America/Chicago" # US Central, follows daylight changes

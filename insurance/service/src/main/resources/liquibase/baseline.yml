@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: baseline/activity.yml
+      relativeToChangelogFile: true

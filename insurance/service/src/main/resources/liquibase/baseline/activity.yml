@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: baseline-activity
+      author: kemi.ibitayo
+      changes:
+        - createTable:
+            tableName: activity
+            columns:
+              - column:
+                  name: id
+                  type: java.sql.Types.NUMERIC(19)
+                  constraints:
+                    - primaryKey: true
+
+              - column:
+                  name: name
+                  type: java.sql.Types.VARCHAR(255)
+
+              - column:
+                  name: item
+                  type: java.sql.Types.NUMERIC(19)
+
+              - column:
+                  name: text
+                  type: java.sql.Types.VARCHAR(255)
+
+              - column:
+                  name: created_by
+                  type: java.sql.Types.VARCHAR(255)
+
+              - column:
+                  name: created_date
+                  type: java.sql.Types.TIMESTAMP(6)
+
+              - column:
+                  name: last_modified_by
+                  type: java.sql.Types.NUMERIC(10)
+
+              - column:
+                  name: last_modified_date
+                  type: java.sql.Types.TIMESTAMP(6)

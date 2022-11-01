@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: inject-activities
+      author: kemi.ibitayo
+      runOnChange: true
+      changes:
+        - sqlFile:
+            path: testdata/activities.sql
+            endDelimiter: ";"
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: inject-activities
+      author: kemi.ibitayo
+      runOnChange: true
+      changes:
+        - loadData:
+            file: testdata/activities.csv
+            encoding: UTF-8
+            quotchar: '""'
+            relativeToChangelogFile: true
+            schemaName: activity
+            separator: ','
+            tableName: activity
+            usePreparedStatements: true
