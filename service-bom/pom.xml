@@ -16,7 +16,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <org.elasticsearch.version>6.8.23</org.elasticsearch.version>
+        <org.elasticsearch.version>8.5.1</org.elasticsearch.version>
         <io.searchbox.jest.version>6.3.1</io.searchbox.jest.version>
         <org.springframework.cloud.bom.version>2021.0.4</org.springframework.cloud.bom.version>
         <org.springframework.boot.version>2.7.3</org.springframework.boot.version>
